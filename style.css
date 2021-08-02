@@ -81,22 +81,23 @@ nav-links{
     background: #f44336;
     transition: 1s;
 }
-@media (max-width: 700px){
-.text-box h1{
-    font-size: 20px;
-     }
-     .nav-links ul li{
-         display: block;
-     }
-     .nav-links ul li{
-         position: absolute;
-         background: #f44336;
-         height: 100vh;
-         width: 200px;
-         top: 0;
-         right: 0;
-         text-align: left;
-         z-index: 2;
-     }
+/*-----about-----*/
+.ABOUT {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px ;
+    font-weight: 600;
+    font-style: normal;
 }
 
+p{
+    color: #777;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 0;
+}
