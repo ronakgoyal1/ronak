@@ -1,40 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+       <meta charset="UTF-8">
         <meta name="viewport" content="with=device=width, initial-scale=1.0">
         
-    <title>Ronak Goyal</title>
+    <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,900;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" ></script>
+    <script  src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     </head>
     <body>
-        <section class="header">
-            <nav>
-                <a href="index.html"><img src="images/ronak.png"></a>
-                <div class="nav-links">
-                    <ul>
-                      <li>  <a href="https://ronakgoyal1.github.io/ronak/" target="_blank"> HOME </a></li>
-                        <li><a href="https://ronakgoyal1.github.io/ronakgoyal1/" target="_blank">ABOUT</a></li>
-                        <li><a href="">BLOG</a></li>
-                        <li><a href="https://discord.gg/nvuk9gJ6" target="_blank">DISCORD</a></li>
-                       
-                          </ul>
+        <nav class="navbar">
+            <div class="max-width">
+                <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Teams</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+            </div>   
+            </div>
+        </nav>
 
+        <!--home section start-->
+        <section class="home" id="home">
+            <div class="max-width">
+               <div class="home-content">
+                   <div class="text-1">Hello, My name is</div>
+                   <div class="text-2">Ronak Goyal</div>
+                   <div class="text-3">And I'm a<span> Student</span></div>
+                   <a href="#">Hire me</a>
                </div>
-                <i class="fa fa-bars"></i>
-            </nav>
-<div class="text-box">
-    <h1>13yr old programmer</h1>
-    <p>Making like this website was my dream.
-        <br>I loved making this!</p>
-    <a href="https://wa.link/ikjwt9"class="hero-btn" target="_blank">Contact me to know more</a>
-</div>
+
+            </div>
         </section>
-      
-        
-    
-    
+
+       <!--about section start--> 
+       <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About me </h2> 
+            <div class="about-content">
+                <div class="column left">
+                    <img src="images/images.jpeg" alt="">
+                </div>
+               <div class="column right">
+                   <div class="text">I'm Ronak and I'm a <span>Student</span></div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quisquam magnam, sequi dolorum iusto aspernatur, quae qui aperiam inventore, velit enim minus rem cumque non quis fuga at itaque nihil? Similique sunt officia distinctio delectus dolore laudantium hic nemo soluta nostrum quas assumenda, nesciunt id a temporibus beatae quam consequatur magni molestias suscipit ad blanditiis quia praesentium excepturi. Natus, odit!</p>
+                <a href="#">Download CV</a>
+           </div>
+            </div>
+        </div>
+    </section>
+<script src="script.js" ></script>
     </body>
 </html>
