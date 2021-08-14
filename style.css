@@ -115,14 +115,25 @@
  background: none;
 }
 
-/* about section styling */
+
+/*all similar section styling*/
 section{
     padding: 100px 0;
 }
-.about{
-    font-family: 'Poppins', sans-serif;
+.about ,
+.skills ,
+.contact {
+    font-family: 'Poppins',sans-serif;
 }
-.about .title {
+.about .about-content,
+.skills .skills-content
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+section .title {
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -131,7 +142,7 @@ section{
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
-.about .title::before{
+section .title::before{
     content:"" ;
     position: absolute;
     bottom: 0px;
@@ -141,8 +152,7 @@ section{
     background: #111;
     transform: translateX(-50%);
 }
-.about .title::after{
-    content:"who i am" ;
+section .title::after{
     position: absolute;
     bottom: -12px;
     left: 50%;
@@ -152,11 +162,10 @@ section{
     background: #fff;
     transform: translateX(-50%);
 }
-.about .about-content{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+/* about section styling */
+
+.about .title::after{
+    content: "who i am";
 }
 .about .about-content .left{
     width: 45%;
@@ -199,11 +208,112 @@ section{
     background: none;
 }
 
+/*Skills Secton start*/
+.skills .title::after{
+    content: "what i know";
+}
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+.skills .skills-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px;
+}
+.skills .skills-content .left p{
+    text-align: justify;
+}
+.skills .skills-content .left a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.skills .skills-content .left a:hover{
+    color: crimson;
+    background: #fff;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
 
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+.skills .skills-content .right .html::before{
+    width: 40%;
+}
+.skills .skills-content .right .css::before{
+    width: 40%;
+}
+.skills .skills-content .right .js::before{
+    width: 25%;
+}
 
-
-
-
+/* contact section*/
+.contact .title::after{
+    content: "get in touch";
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: crimson;
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    color:#333;
+}
 /*responsive media query start*/
 @media (max-width: 1300px){
     .home .max-width{
@@ -275,6 +385,10 @@ section{
 }
 .about .about-content .right{
     flex: 100%;
+}
+.skills .skills-content .column{
+    width: 100%;
+    margin-bottom: 35px;
 }
 }
 
